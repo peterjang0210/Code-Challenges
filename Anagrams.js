@@ -15,16 +15,13 @@ const anagram = function(keyWord, wordArray) {
     const sameLengthArr = wordArray.filter(word => keyWord.length === word.length);
 
     const checkArray = [...keyWord].sort();
-    console.log(checkArray);
 
     const anagramArray = [];
 
     for(let i = 0; i < sameLengthArr.length; i++){
-        console.log([...sameLengthArr[i]].sort());
         if([...sameLengthArr[i]].sort().toString() === checkArray.toString()){
             anagramArray.push(sameLengthArr[i]);
         }
-            
     }
 
     return anagramArray;
