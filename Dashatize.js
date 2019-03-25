@@ -11,9 +11,7 @@ const dashatize = function(num){
     const numArray = [...(num.toString())];
     if(numArray[0] === "-"){
         numArray.shift();
-        console.log(numArray);
         if(numArray.length === 1){
-            console.log("test");
             return numArray[0];
         }
     }
